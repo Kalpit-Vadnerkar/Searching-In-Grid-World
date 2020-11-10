@@ -9,17 +9,16 @@
 #
 
 """
-Project 1 : Search Algorithms
-Team Members:
-    1: Kalpit Vadnerkar
-    2: Dhananjay Nikam
+Project : Search Algorithms
+Author:
+    Kalpit Vadnerkar
 """
 
 """
- In this assignment, the task is to implement different search algorithms to find 
+ The task is to implement different search algorithms to find 
  a path from a given start cell to the goal cell in a 2D grid map.
 
- To complete the assignment, you must finish three functions:
+ Functions:
    depth_first_search (line 148), uniform_cost_search (line 232), 
    and astar_search (line 279).
 
@@ -29,13 +28,11 @@ Team Members:
    the cell at the left-top corner is (0, 0);
    the cell at the first row and second column is (0, 1);
    the cell at the second row and first column is (1, 0).
- You need put these tuples into the open set or/and closed set properly
- during searching.
 """
 
 # ACTIONS defines how to reach an adjacent cell from a given cell
 # Important: please check that a cell within the bounds of the grid
-# when try to access it.
+# when trying to access it.
 ACTIONS = (
     (-1,  0), # go up
     ( 0, -1), # go left
@@ -148,8 +145,6 @@ from utils.search_app import OrderedSet, Stack, Queue, PriorityQueue
    assert(x.get((3,3)) == 10)
 """
 
-
-# use math library if needed
 import math
 
 def find_path(parent, actions, start, goal):
